@@ -51,6 +51,7 @@ public class WeatherForecastController : ControllerBase
     [HttpPut("{id}")]
     public ActionResult PutTodoItem(long id)
     {
+        _logger.LogInformation($"The is of the object to be updated {id}");
         return NoContent();
     }
 }

@@ -33,3 +33,4 @@
 /Users/msweelam/work/public-work/coding/csharp/TodoApi/obj/Debug/net8.0/TodoApi.pdb
 /Users/msweelam/work/public-work/coding/csharp/TodoApi/obj/Debug/net8.0/TodoApi.genruntimeconfig.cache
 /Users/msweelam/work/public-work/coding/csharp/TodoApi/obj/Debug/net8.0/ref/TodoApi.dll
+/Users/msweelam/work/public-work/coding/csharp/TodoApi/obj/Debug/net8.0/TodoApi.sourcelink.json
