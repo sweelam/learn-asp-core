@@ -2,6 +2,8 @@ namespace TodoApi.Services.Impl;
 
 public class WeatherForcastServiceImpl : IWeatherForcastService
 {
+    private Dictionary<int, string> mp = new Dictionary<int, string>();
+
     public IEnumerable<WeatherForecast> displayWeatherForcast()
     {
         return Enumerable
@@ -15,5 +17,10 @@ public class WeatherForcastServiceImpl : IWeatherForcastService
                 ,
             })
             .ToArray();
+    }
+
+    public Dictionary<int, string> getMap()
+    {
+        return mp;
     }
 }

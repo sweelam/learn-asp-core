@@ -22,7 +22,7 @@ public class WeatherForecastController : ControllerBase
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
-    private IWeatherForcastService _iWeatherForcastService;
+    private readonly IWeatherForcastService _iWeatherForcastService;
 
     public WeatherForecastController(
         ILogger<WeatherForecastController> logger,
@@ -52,6 +52,11 @@ public class WeatherForecastController : ControllerBase
     public ActionResult PutTodoItem(long id)
     {
         _logger.LogInformation($"The is of the object to be updated {id}");
+
+        this._iWeatherForcastService.getMap().Add(((int)id), "HYC" + id);
+
+        _logger.LogInformation($" MP count is {this._iWeatherForcastService.getMap().Count}");
+
         return NoContent();
     }
 }
